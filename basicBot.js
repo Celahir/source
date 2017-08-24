@@ -3221,7 +3221,7 @@
                         basicBot.disconnectAPI();
                         kill();
                         setTimeout(function() {
-                            $.getScript(basicBot.settings.scriptLink);
+                            $.getScript(Celahir.settings.scriptLink);
                         }, 2000);
                     }
                 }
