@@ -246,7 +246,7 @@
     var botCreatorIDs = ['3851534', '4105209'];
 
     var basicBot = {
-        version: '2.10.0',
+        version: '2.11.0 HiroC update',
         status: false,
         name: 'basicBot',
         loggedInID: null,
@@ -258,7 +258,7 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: 'basicBot',
+            botName: 'FurrBot v2',
             language: 'english',
             chatLink: 'https://rawgit.com/basicBot/source/master/lang/en.json',
             scriptLink: 'https://rawgit.com/basicBot/source/master/basicBot.js',
