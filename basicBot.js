@@ -2503,7 +2503,7 @@
                                 )
                             }
                             var api_key = 'dc6zaTOxFJmzC'; // public beta key
-                            var rating = 'nc-17'; // PG 13 gifs edited to NC-17
+                            var rating = 'R'; // PG 13 gifs edited to NC-17
                             var tag = msg.substr(cmd.length + 1);
                             var fixedtag = tag.replace(/ /g, '+');
                             var commatag = tag.replace(/ /g, ', ');
