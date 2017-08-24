@@ -267,30 +267,30 @@
             startupVolume: 0, // 0-100
             startupEmoji: false, // true or false
             autowoot: true,
-            autoskip: false,
+            autoskip: true,
             smartSkip: true,
-            cmdDeletion: true,
+            cmdDeletion: false,
             maximumAfk: 120,
-            afkRemoval: true,
-            maximumDc: 60,
+            afkRemoval: false,
+            maximumDc: 600,
             bouncerPlus: true,
             blacklistEnabled: true,
             lockdownEnabled: false,
             lockGuard: false,
             maximumLocktime: 10,
-            cycleGuard: true,
+            cycleGuard: false,
             maximumCycletime: 10,
-            voteSkip: false,
-            voteSkipLimit: 10,
-            historySkip: false,
+            voteSkip: true,
+            voteSkipLimit: 2,
+            historySkip: true,
             timeGuard: true,
-            maximumSongLength: 10,
+            maximumSongLength: 11,
             autodisable: false,
-            commandCooldown: 30,
+            commandCooldown: 20,
             usercommandsEnabled: true,
-            thorCommand: false,
-            thorCooldown: 10,
-            skipPosition: 3,
+            thorCommand: true,
+            thorCooldown: 600,
+            skipPosition: 2,
             skipReasons: [
                 ['theme', 'This song does not fit the room theme. '],
                 ['op', 'This song is on the OP list. '],
@@ -1115,7 +1115,7 @@
                 basicBot.room.autoskipTimer = setTimeout(function() {
                     var endcid = API.getMedia().cid;
                     if (startcid === endcid) {
-                        //API.sendChat('Song stuck, skipping...');
+                        API.sendChat('Song stuck, skipping...');
                         API.moderateForceSkip();
                     }
                 }, remaining + 5000);
@@ -1222,7 +1222,6 @@
                 if (basicBot.settings.cmdDeletion && msg.startsWith(basicBot.settings.commandLiteral)) {
                     API.moderateDeleteChat(chat.cid);
                 }
-                /**
                  var plugRoomLinkPatt = /(\bhttps?:\/\/(www.)?plug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
                  if (plugRoomLinkPatt.exec(msg)) {
                     if (perm === 0) {
@@ -1231,7 +1230,6 @@
                         return true;
                     }
                 }
-                 **/
                 if (msg.indexOf('http://adf.ly/') > -1) {
                     API.moderateDeleteChat(chat.cid);
                     API.sendChat(subChat(basicBot.chat.adfly, {
@@ -1536,7 +1534,6 @@
 
             },
 
-            /*
             command: {
                 command: 'cmd',
                 rank: 'user/bouncer/mod/manager',
@@ -1549,7 +1546,6 @@
                     }
                 }
             },
-            */
 
             activeCommand: {
                 command: 'active',
@@ -2507,7 +2503,7 @@
                                 )
                             }
                             var api_key = 'dc6zaTOxFJmzC'; // public beta key
-                            var rating = 'pg-13'; // PG 13 gifs
+                            var rating = 'nc-17'; // PG 13 gifs edited to NC-17
                             var tag = msg.substr(cmd.length + 1);
                             var fixedtag = tag.replace(/ /g, '+');
                             var commatag = tag.replace(/ /g, ', ');
@@ -2539,7 +2535,7 @@
                                 )
                             }
                             var api_key = 'dc6zaTOxFJmzC'; // public beta key
-                            var rating = 'pg-13'; // PG 13 gifs
+                            var rating = 'R'; // PG 13 gifs
                             get_random_id(api_key, function(id) {
                                 if (typeof id !== 'undefined') {
                                     API.sendChat(subChat(basicBot.chat.validgifrandom, {
