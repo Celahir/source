@@ -243,10 +243,10 @@
 
     var botCreator = 'Yemasthui';
     var botMaintainer = 'Benzi'
-    var botCreatorIDs = ['3851534', '4105209'];
+    var botCreatorIDs = ['3851531', '4105289'];
 
     var basicBot = {
-        version: '2.11.0 HiroC update',
+        version: '2.11.2 HiroC update',
         status: false,
         name: 'basicBot',
         loggedInID: null,
