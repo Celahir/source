@@ -1875,7 +1875,7 @@
                         if (msg.length === cmd.length) return API.sendChat(subChat(basicBot.chat.nolistspecified, {
                             name: chat.un
                         }));
-                        var list = msg.substr(cmd.length + 1);
+                        var list = msg.substr(cmd.length + 1).toUpperCase();
                         if (typeof basicBot.room.blacklists[list] === 'undefined') return API.sendChat(subChat(basicBot.chat.invalidlistspecified, {
                             name: chat.un
                         }));
