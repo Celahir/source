@@ -246,7 +246,7 @@
     var botCreatorIDs = ['3851531', '4105289'];
 
     var basicBot = {
-        version: '2.11.2 HiroC update',
+        version: '2.11.3 Damn Crux update',
         status: false,
         name: 'basicBot',
         loggedInID: null,
