@@ -289,7 +289,7 @@
             commandCooldown: 20,
             usercommandsEnabled: true,
             thorCommand: true,
-            thorCooldown: 60,
+            thorCooldown: 40,
             skipPosition: 2,
             skipReasons: [
                 ['theme', 'This song does not fit the room theme. '],
@@ -300,7 +300,7 @@
                 ['nsfw', 'The song you contained was NSFW (image or sound). '],
                 ['unavailable', 'The song you played was not available for some users. ']
             ],
-            afkpositionCheck: 15,
+            afkpositionCheck: 2,
             afkRankCheck: 'ambassador',
             motdEnabled: false,
             motdInterval: 5,
