@@ -284,7 +284,7 @@
             voteSkipLimit: 2,
             historySkip: true,
             timeGuard: true,
-            maximumSongLength: 11,
+            maximumSongLength: 16,
             autodisable: false,
             commandCooldown: 20,
             usercommandsEnabled: true,
@@ -3640,7 +3640,7 @@
             },
 
             thorCommand: {
-                command: 'thor',
+                command: ['thor', 'tchoř', 'kurwa', 'gimmemyhammer'],
                 rank: 'user',
                 type: 'exact',
                 functionality: function(chat, cmd) {
