@@ -246,12 +246,12 @@
     var botCreatorIDs = ['3851531', '4105289'];
 
     var basicBot = {
-        version: '2.11.6 Everything is facked up...!',
+        version: '2.11.7 IDK what i just did...',
         status: false,
         name: 'basicBot',
         loggedInID: null,
         scriptLink: 'https://rawgit.com/Celahir/source/master/basicBot.js',
-        cmdLink: 'http://git.io/245Ppg',
+        cmdLink: 'https://git.io/v5DXJ',
         chatLink: 'https://rawgit.com/Celahir/source/master/lang/en.json',
         chat: null,
         loadChat: loadChat,
