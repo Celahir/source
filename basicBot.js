@@ -246,7 +246,7 @@
     var botCreatorIDs = ['3851531', '4105289'];
 
     var basicBot = {
-        version: '2.11.7 IDK what i just did...',
+        version: '2.11.8 Eight! Sumfin gone wrong! OwO',
         status: false,
         name: 'basicBot',
         loggedInID: null,
@@ -2172,7 +2172,7 @@
             },
 
             dclookupCommand: {
-                command: ['dclookup', 'dc'],
+                command: ['dclookup', 'dc', 'back', 'damn', 'omg'],
                 rank: 'user',
                 type: 'startsWith',
                 functionality: function(chat, cmd) {
