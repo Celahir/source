@@ -483,12 +483,12 @@
                 if (typeof obj === 'object') u = obj;
                 else u = API.getUser(obj);
                 switch(u.gRole) {
-                    case 2000:
-                        return 7;
                     case 3000:
-                        return 8;
-                    case 4000:
-                        return 9;
+                        return 7;
+                   // case 3000:
+                   //     return 8;
+                   // case 4000:
+                   //     return 9;
                     case 5000:
                         return 10;
                 }
