@@ -246,7 +246,7 @@
     var botCreatorIDs = ['3851531', '4105289'];
 
     var basicBot = {
-        version: '2.11.8 Eight! Sumfin gone wrong! OwO',
+        version: '2.11.8a Uhm... I am not a jerk!',
         status: false,
         name: 'basicBot',
         loggedInID: null,
@@ -258,7 +258,7 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: 'FurrBot v2',
+            botName: 'JerkBot v2',
             language: 'english',
             chatLink: 'https://rawgit.com/Celahir/source/master/lang/en.json',
             scriptLink: 'https://rawgit.com/Celahir/source/master/basicBot.js',
