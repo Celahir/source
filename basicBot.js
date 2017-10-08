@@ -246,7 +246,7 @@
     var botCreatorIDs = ['3851531', '4105289'];
 
     var basicBot = {
-        version: '2.11.8a Uhm... I am not a jerk!',
+        version: '2.11.8b Suicide denited... ',
         status: false,
         name: 'basicBot',
         loggedInID: null,
@@ -1289,8 +1289,13 @@
                 }
                 return false;
             },
+            //commandCheck: function(chat) {
+            //    var cmd;
             commandCheck: function(chat) {
-                var cmd;
+                    if(chat.uid === basicBot.loggedInID) {
+                return
+                                            }
+                    var cmd;
                 if (chat.message.charAt(0) === basicBot.settings.commandLiteral) {
                     var space = chat.message.indexOf(' ');
                     if (space === -1) {
